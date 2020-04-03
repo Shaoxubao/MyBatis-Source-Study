@@ -77,7 +77,7 @@ public class SqlSessionFactoryBuilder {
             XMLConfigBuilder parser = new XMLConfigBuilder(inputStream, environment, properties);
             return build(parser.parse());
         } catch (Exception e) {
-            throw ExceptionFactory.wrapException("Error building SqlSession.", e);
+            throw ExceptionFactory.wrapException("Error building  SqlSession.", e);
         } finally {
             ErrorContext.instance().reset();
             try {
