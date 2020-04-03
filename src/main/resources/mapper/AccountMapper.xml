@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.apache.ibatis.demo.AccountMapper">
+
+    <select id="queryAccountList" resultType="org.apache.ibatis.demo.Account">
+        select
+            id as id,
+            user_name as userName,
+            balance as balance
+        from
+            t_account
+    </select>
+
+</mapper>
